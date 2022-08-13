@@ -13,13 +13,51 @@
 
    .neon {
        color: #fff;
-       font-size: 5em;
+       font-size: 6em;
        text-align: center;
        letter-spacing: 12px;
        /* -webkit-box-reflect: below -35px linear-gradient(transparent, transparent, #0005); */
-       text-shadow: 
-           0 0 1.0px #fff,
-           0 0 2.5px #fff,
-           0 0 7.0px #0ff,
-           0 0 7.0px #0ff;
+       text-shadow:
+           0 0 10px #fff,
+           0 0 25px #fff,
+           0 0 70px #0ff,
+           0 0 70px #0ff;
+   }
+
+   .neon span {
+       animation: flicker 6s linear infinite;
+   }
+   .neon .delay1 {
+       animation-delay: 3s;
+   }
+   .neon .delay2 {
+       animation-delay: 0.5s;
+   }
+   .neon .delay3 {
+       animation-delay: 3s;
+   }
+   .neon .delay4 {
+       animation-delay: 1s;
+   }
+   @keyframes flicker {
+       0% {
+           opacity: 1;
+       }
+       10% {
+           opacity: 0;
+       }
+       
+       20% {
+           opacity: 1;
+       }
+       40% {
+           opacity: 0;
+       }
+       80%{
+        opacity: 1;
+       }
+       100% {
+           opacity: 0;
+       }
+       
    }
